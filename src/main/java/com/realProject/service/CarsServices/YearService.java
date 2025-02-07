@@ -19,7 +19,7 @@ public class YearService {
     public String addYears(Year year) {
         Optional<Year> opYear = yearRepository.findByYear(year.getYear());
         if(opYear.isPresent()){
-            return "Year is already Present";
+            throw new RuntimeException("Year is already Present");
         }
         yearRepository.save(year);
         return "year Saved";
