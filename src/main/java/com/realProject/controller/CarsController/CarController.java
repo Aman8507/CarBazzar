@@ -1,10 +1,7 @@
 package com.realProject.controller.CarsController;
 
 import com.realProject.entity.Car.Car;
-import com.realProject.repository.CarRepository;
 import com.realProject.service.CarsServices.CarService;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -39,9 +36,10 @@ public class CarController {
     @GetMapping("/searchCar")
 
     public  List<Car> searchCar (
-            @RequestParam String param
+            @RequestParam(required = false) String param,
+            @RequestParam(required = false)Integer year
     ){
-        return carService.searchCar(param);
+        return carService.searchCar(param,year);
     }
 
     //http://localhost:8080/api/v1/car?pageNo=0&pageSize=2
@@ -56,4 +54,12 @@ public class CarController {
         return cars;
     }
 
+    // http://localhost:8080/api/v1/car/searchByYear?year=2015
+
+//    @GetMapping("/SearchByYear")
+//    public List<Car> searchCarByYear(
+//            @RequestParam Integer year
+//    ){
+//        return carService.searchCarByYear(year);
+//    }
 }

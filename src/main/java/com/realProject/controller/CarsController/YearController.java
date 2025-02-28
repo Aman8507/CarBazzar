@@ -23,7 +23,7 @@ public class YearController {
 
     //http://localhost:8080/api/v1/year/get
     @GetMapping("/get")
-    public List<String> getall(){
+    public List<Integer> getall(){
         return yearService.getall();
     }
 }

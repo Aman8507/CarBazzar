@@ -1,4 +1,4 @@
-package com.realProject.repository;
+package com.realProject.repository.CarRelatedRepo;
 
 import com.realProject.entity.Car.Brand;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,6 +1,5 @@
-package com.realProject.repository;
+package com.realProject.repository.CarRelatedRepo;
 
-import com.realProject.entity.Car.Model;
 import com.realProject.entity.Car.Transmission;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

@@ -1,8 +1,7 @@
 package com.realProject.service.CarsServices;
 
-import com.realProject.entity.Car.Model;
 import com.realProject.entity.Car.Transmission;
-import com.realProject.repository.TransmissionRepository;
+import com.realProject.repository.CarRelatedRepo.TransmissionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

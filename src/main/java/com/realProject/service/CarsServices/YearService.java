@@ -1,8 +1,7 @@
 package com.realProject.service.CarsServices;
 
-import com.realProject.entity.Car.Transmission;
 import com.realProject.entity.Car.Year;
-import com.realProject.repository.YearRepository;
+import com.realProject.repository.CarRelatedRepo.YearRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +24,7 @@ public class YearService {
         return "year Saved";
     }
 
-    public List<String> getall() {
+    public List<Integer> getall() {
         return yearRepository.findAllYear();
     }
 }

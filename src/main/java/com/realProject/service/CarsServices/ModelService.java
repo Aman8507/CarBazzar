@@ -1,8 +1,7 @@
 package com.realProject.service.CarsServices;
 
-import com.realProject.entity.Car.Brand;
 import com.realProject.entity.Car.Model;
-import com.realProject.repository.ModelRepository;
+import com.realProject.repository.CarRelatedRepo.ModelRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

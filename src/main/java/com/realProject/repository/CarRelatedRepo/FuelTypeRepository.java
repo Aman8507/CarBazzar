@@ -1,6 +1,5 @@
-package com.realProject.repository;
+package com.realProject.repository.CarRelatedRepo;
 
-import com.realProject.entity.Car.Brand;
 import com.realProject.entity.Car.FuelType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
